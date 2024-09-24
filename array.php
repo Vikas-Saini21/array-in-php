@@ -40,6 +40,7 @@ else
 }
 ?>
 
+
 <!-- array_search method-->
 <?php
 $places=array('jaipur','jhunjhunu','kota','jammu','udaipur');
@@ -78,7 +79,7 @@ print_r ($newplaces);
 ?>
 
 
-<!-- array_conmbine method -->
+<!-- array_combine method -->
 <?php
 $places=array('jaipur','jhunjhunu','kota','jammu');
 $places2=array('delhi','agra','udaipur','jaipur');
