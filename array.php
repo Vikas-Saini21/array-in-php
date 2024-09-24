@@ -67,3 +67,54 @@ $places=array('jaipur','jhunjhunu','kota','jammu','udaipur');
 array_unshift($places,'delhi');
 print_r($places);
 ?>
+
+
+<!-- array_merge method -->
+<?php
+$places=array('jaipur','jhunjhunu','kota','jammu');
+$places2=array('delhi','agra','udaipur','jaipur');
+$newplaces=array_merge($places,$places2);
+print_r ($newplaces);
+?>
+
+
+<!-- array_conmbine method -->
+<?php
+$places=array('jaipur','jhunjhunu','kota','jammu');
+$places2=array('delhi','agra','udaipur','jaipur');
+$newplaces=array_combine($places,$places2);
+print_r ($newplaces);
+?>
+
+
+<?php
+$places=array('india','rajasthan','goa','punjab');
+$places2=array('delhi','jaipur','panjim','chandigarh');
+$newplaces=array_combine($places,$places2);
+print_r ($newplaces);
+?>
+
+
+<!-- array_slice method -->
+<?php
+$arr=array(1,2,3,4,5,6);
+$arr1=array_slice($arr,1,3);
+print_r($arr1);
+?>
+
+
+<!-- array_intersect method -->
+<?php
+$arr=array(1,2,3,4,5,6);
+$arr1=array(1,2,7,8,9,10);
+$arr2=array_intersect($arr,$arr1);
+print_r($arr2);
+?>
+
+
+<!-- array_values method-->
+<?php
+$arr=array(1,2,3,4,5,6);
+$arr1=array_values($arr1);
+print_r($arr1);
+?>
