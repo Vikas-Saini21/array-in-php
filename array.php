@@ -119,3 +119,112 @@ $arr=array(1,2,3,4,5,6);
 $arr1=array_values($arr1);
 print_r($arr1);
 ?>
+
+
+<!-- associative array -->
+<?php
+$arr=array(
+    "vikas"=>20,
+    "deependra"=>22,
+    "arvind"=>20,
+    "suraj"=>23,
+    "komal"=>22,
+    "monika"=>26,
+    "himanshu"=>30,
+);
+print_r($arr)."<br>";
+var_dump($arr);
+?>
+
+<?php
+$arr=[
+    "vikas"=>20,
+    "deependra"=>22,
+    "arvind"=>20,
+    "suraj"=>23,
+    "komal"=>22,
+    "monika"=>26,
+    "himanshu"=>30,
+];
+print_r($arr)."<br>";
+var_dump($arr);
+?>
+
+<!-- insering the value -->
+<?php
+$arr=array(
+    "vikas"=>20,
+    "deependra"=>22,
+    "arvind"=>20,
+    "suraj"=>23,
+    "komal"=>22,
+    "monika"=>26,
+    "himanshu"=>30,
+);
+$arr["abhay"]=50;
+print_r($arr);
+?> 
+
+<!-- another way to create an array with square braces  -->
+<?php
+$marks=array(
+    "arvind"=>[
+        "hindi"=>40,
+        "english"=>50,
+        "maths"=>60,
+    ],
+    "vikas"=>[
+        "hindi"=>60,
+        "english"=>80,
+        "maths"=>70,
+    ],
+    );
+    echo"<pre>";
+    print_r($marks);
+    echo"</pre>";
+?>
+
+<!-- array_flip method -->
+<?php
+$arr=array(
+    "Vikas"=>20,
+    "Suraj"=>23,
+);
+$newarray=array_flip($arr);
+print_r($newarray);
+?>
+
+
+<!-- array_change_key_case -->
+<?php
+$arr=array(
+    "Vikas"=>20,
+    "Suraj"=>23,
+);
+$newarray=array_change_key_case($arr,CASE_UPPER);
+print_r($newarray);
+?>
+
+
+<!-- array_sum mthod -->
+<?php
+$arr=array(1,2,3,4,5,6);
+$newarray=array_sum($arr);
+print_r($newarray)
+?>
+
+
+<!-- array_product mthod -->
+<?php
+$arr=array(1,2,3,4,5,6);
+$newarray=array_product($arr);
+print_r($newarray)
+?>
+
+
+<!-- sort method -->
+<?php
+$number=array(25,55,45,5,8);
+sort($number);
+print_r($number)
+?>
