@@ -159,6 +159,7 @@ echo"</pre>";
 var_dump($arr)."<br>";
 ?>
 
+
 <?php
 $arr=[
     "vikas"=>20,
@@ -174,6 +175,7 @@ print_r($arr)."<br>";
 echo"</pre>";
 var_dump($arr);
 ?>
+
 
 <!-- inserting the value -->
 <?php
@@ -191,6 +193,7 @@ echo"<pre>";
 print_r($arr);
 echo"</pre>";
 ?> 
+
 
 <!-- another way to create an array with square braces  -->
 <?php
@@ -210,6 +213,7 @@ $marks=array(
     print_r($marks);
     echo"</pre>";
 ?>
+
 
 <!-- array_flip method -->
 <?php
@@ -308,6 +312,8 @@ print_r($newarray);
 echo"</pre>";
 ?>
 
+
+
 <!-- array traversing method -->
  <!-- current method -->
   <?php
@@ -360,3 +366,52 @@ echo"</pre>";
   reset($arr);
   echo current($arr)."<br>"; 
   ?>
+
+
+<!-- extract method -->
+<?php
+$a="pink";
+$b="grey";
+$c="yellow";
+$d="pitch";
+$color=array(
+    "a"=>"red",
+    "b"=>"black",
+    "c"=>"blue",
+    "d"=>"green",
+);
+extract ($color,EXTR_SKIP);
+echo "$a"."<br>";
+echo "$b"."<br>";
+echo "$c"."<br>";
+echo "$d"."<br>";
+?>
+
+
+<!-- compact method -->
+ <?php
+ $name="vikas";
+ $age=25;
+ $color="pink";
+ $newarray=compact("name","age","color");
+ echo "<pre>";
+ print_r($newarray);
+ echo "</pre>";
+ ?>
+
+ <!-- range method -->
+<?php
+$arr=range("a","z",5);
+echo "<pre>";
+print_r($arr);
+echo "</pre>"
+?>
+
+<!-- explode method -->
+<?php
+$greet="hello guys! how are you all";
+$newarray=explode(" ",$greet);
+echo "<pre>";
+print_r($newarray);
+echo "</pre>"
+?>
