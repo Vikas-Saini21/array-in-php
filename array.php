@@ -415,3 +415,68 @@ echo "<pre>";
 print_r($newarray);
 echo "</pre>"
 ?>
+
+
+<!-- strtoupper method -->
+ <?php
+$value="vikas saini";
+$newvalue=strtoupper($value);
+echo $newvalue;
+?>
+
+
+<!-- strtolower method -->
+<?php
+$value="VIKAS SAINI";
+$newvalue=strtolower($value);
+echo $newvalue;
+?>
+
+<!-- ucfirst method -->
+<?php
+$value="vikas saini";
+$newvalue=ucfirst($value);
+echo $newvalue;
+?>
+
+<!-- lcfirst method -->
+<?php
+$value="VIKAS SAINI";
+$newvalue=lcfirst($value);
+echo $newvalue;
+?>
+
+
+<!-- ucwords method -->
+<?php
+$value="vikas saini";
+$newvalue=ucwords($value);
+echo $newvalue;
+?>
+
+
+<!-- str_split method -->
+<?php
+$value="vikas saini";
+$newvalue=str_split($value);
+echo "<pre>";
+print_r($newvalue);
+echo "</pre>";
+?>
+
+
+<!-- strlen method -->
+<?php
+$value="vikas saini";
+$newvalue=strlen($value);
+echo $newvalue;
+?>
+
+
+<!-- str_word_count method -->
+<?php
+$value="vikas saini";
+$newvalue=str_word_count($value);
+echo $newvalue;
+?>
+
